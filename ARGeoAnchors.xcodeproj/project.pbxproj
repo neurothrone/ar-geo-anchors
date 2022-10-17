@@ -12,8 +12,9 @@
 		2F54632428FCD43900CDCF90 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2F54632328FCD43900CDCF90 /* Experience.rcproject */; };
 		2F54632628FCD43A00CDCF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F54632528FCD43A00CDCF90 /* Assets.xcassets */; };
 		2F54632928FCD43A00CDCF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F54632828FCD43A00CDCF90 /* Preview Assets.xcassets */; };
-		2F54633028FCD48100CDCF90 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F54632F28FCD48100CDCF90 /* Coordinator.swift */; };
+		2F54633028FCD48100CDCF90 /* ARSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F54632F28FCD48100CDCF90 /* ARSessionCoordinator.swift */; };
 		2F54633228FCD53000CDCF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F54633128FCD53000CDCF90 /* Main.storyboard */; };
+		2F54633428FCDD5C00CDCF90 /* ARView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F54633328FCDD5C00CDCF90 /* ARView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,9 @@
 		2F54632328FCD43900CDCF90 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		2F54632528FCD43A00CDCF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F54632828FCD43A00CDCF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2F54632F28FCD48100CDCF90 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2F54632F28FCD48100CDCF90 /* ARSessionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionCoordinator.swift; sourceTree = "<group>"; };
 		2F54633128FCD53000CDCF90 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2F54633328FCDD5C00CDCF90 /* ARView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,8 @@
 			children = (
 				2F54631F28FCD43900CDCF90 /* AppDelegate.swift */,
 				2F54632128FCD43900CDCF90 /* ContentView.swift */,
-				2F54632F28FCD48100CDCF90 /* Coordinator.swift */,
+				2F54632F28FCD48100CDCF90 /* ARSessionCoordinator.swift */,
+				2F54633328FCDD5C00CDCF90 /* ARView+Extensions.swift */,
 				2F54632328FCD43900CDCF90 /* Experience.rcproject */,
 				2F54632528FCD43A00CDCF90 /* Assets.xcassets */,
 				2F54633128FCD53000CDCF90 /* Main.storyboard */,
@@ -147,9 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F54633028FCD48100CDCF90 /* Coordinator.swift in Sources */,
+				2F54633028FCD48100CDCF90 /* ARSessionCoordinator.swift in Sources */,
 				2F54632228FCD43900CDCF90 /* ContentView.swift in Sources */,
 				2F54632028FCD43900CDCF90 /* AppDelegate.swift in Sources */,
+				2F54633428FCDD5C00CDCF90 /* ARView+Extensions.swift in Sources */,
 				2F54632428FCD43900CDCF90 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +286,9 @@
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires your camera to provide the AR experience";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires your location in order to work";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location in order to work";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -313,7 +319,9 @@
 				DEVELOPMENT_TEAM = 4BP826FJGX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires your camera to provide the AR experience";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app requires your location in order to work";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires your location in order to work";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
