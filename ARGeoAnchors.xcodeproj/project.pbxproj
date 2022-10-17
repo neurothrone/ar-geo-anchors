@@ -12,6 +12,8 @@
 		2F54632428FCD43900CDCF90 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2F54632328FCD43900CDCF90 /* Experience.rcproject */; };
 		2F54632628FCD43A00CDCF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F54632528FCD43A00CDCF90 /* Assets.xcassets */; };
 		2F54632928FCD43A00CDCF90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F54632828FCD43A00CDCF90 /* Preview Assets.xcassets */; };
+		2F54633028FCD48100CDCF90 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F54632F28FCD48100CDCF90 /* Coordinator.swift */; };
+		2F54633228FCD53000CDCF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F54633128FCD53000CDCF90 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		2F54632328FCD43900CDCF90 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		2F54632528FCD43A00CDCF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F54632828FCD43A00CDCF90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F54632F28FCD48100CDCF90 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2F54633128FCD53000CDCF90 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			children = (
 				2F54631F28FCD43900CDCF90 /* AppDelegate.swift */,
 				2F54632128FCD43900CDCF90 /* ContentView.swift */,
+				2F54632F28FCD48100CDCF90 /* Coordinator.swift */,
 				2F54632328FCD43900CDCF90 /* Experience.rcproject */,
 				2F54632528FCD43A00CDCF90 /* Assets.xcassets */,
+				2F54633128FCD53000CDCF90 /* Main.storyboard */,
 				2F54632728FCD43A00CDCF90 /* Preview Content */,
 			);
 			path = ARGeoAnchors;
@@ -128,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F54633228FCD53000CDCF90 /* Main.storyboard in Resources */,
 				2F54632928FCD43A00CDCF90 /* Preview Assets.xcassets in Resources */,
 				2F54632628FCD43A00CDCF90 /* Assets.xcassets in Resources */,
 			);
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F54633028FCD48100CDCF90 /* Coordinator.swift in Sources */,
 				2F54632228FCD43900CDCF90 /* ContentView.swift in Sources */,
 				2F54632028FCD43900CDCF90 /* AppDelegate.swift in Sources */,
 				2F54632428FCD43900CDCF90 /* Experience.rcproject in Sources */,
